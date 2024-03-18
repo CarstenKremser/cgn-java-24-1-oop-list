@@ -19,5 +19,10 @@ public class Main {
         }
 
 
+        School school = new School();
+        for (Student student:students) {
+            school.addStudent(student);
+        }
+        System.out.println(school.toString());
     }
 }
