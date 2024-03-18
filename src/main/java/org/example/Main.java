@@ -51,5 +51,22 @@ public class Main {
         System.out.println(school.retrieveAllCoursesForStudent("c001"));
 
 
+        // use Sack
+
+        Sack sack = new Sack();
+
+        sack.add(students.get(0));
+        sack.add(students.get(1));
+        sack.add(students.get(2));
+        sack.add(students.get(3));
+
+        System.out.println(sack);
+
+        sack.removeLast();
+        System.out.println(sack);
+
+        System.out.println(sack.removeByIndex(1));
+        System.out.println(sack);
+
     }
 }
