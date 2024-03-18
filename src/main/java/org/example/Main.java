@@ -24,5 +24,11 @@ public class Main {
             school.addStudent(student);
         }
         System.out.println(school);
+
+        Student aStudent = school.findById("d001");
+        System.out.println(aStudent);
+
+        school.removeStudent("b001");
+        System.out.println(school);
     }
 }

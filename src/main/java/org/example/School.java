@@ -11,6 +11,23 @@ public class School {
         students.add(student);
     }
 
+    public Student findById(String id) {
+        for (Student student:students) {
+            if(student.getId().equals(id)) {
+                return student;
+            }
+        }
+        return null;
+    }
+
+    public boolean removeStudent(String id) {
+        Student student = findById(id);
+        if (student != null) {
+            return students.remove(student);
+        }
+        return false;
+    }
+
     @Override
     public String toString() {
         String result = "School{" +
