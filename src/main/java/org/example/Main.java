@@ -23,6 +23,6 @@ public class Main {
         for (Student student:students) {
             school.addStudent(student);
         }
-        System.out.println(school.toString());
+        System.out.println(school);
     }
 }
