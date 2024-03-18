@@ -52,6 +52,7 @@ public class Main {
 
 
         // use Sack
+        System.out.println("Sack: ");
 
         Sack sack = new Sack();
 
@@ -67,6 +68,24 @@ public class Main {
 
         System.out.println(sack.removeByIndex(1));
         System.out.println(sack);
+
+        // use Beutel
+        System.out.println("Beutel: ");
+
+        Beutel beutel = new Beutel();
+
+        beutel.add(students.get(0));
+        beutel.add(students.get(1));
+        beutel.add(students.get(2));
+        beutel.add(students.get(3));
+
+        System.out.println(beutel);
+
+        beutel.removeLast();
+        System.out.println(beutel);
+
+        System.out.println(beutel.removeByIndex(1));
+        System.out.println(beutel);
 
     }
 }
