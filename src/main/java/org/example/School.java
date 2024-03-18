@@ -38,4 +38,16 @@ public class School {
         result += "}}";
         return result;
     }
+
+    public String retrieveAllCoursesForStudent(String id) {
+        String result = "";
+        Student student = findById(id);
+        if (student != null) {
+            result += "Courses for Student with id " + id + ":\n";
+            for (Course course: student.getCourses()) {
+                result += course.toString() + "\n";
+            }
+        }
+        return result;
+    }
 }

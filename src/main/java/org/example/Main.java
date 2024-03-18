@@ -30,5 +30,26 @@ public class Main {
 
         school.removeStudent("b001");
         System.out.println(school);
+
+        Course course1 = new Course("english","Smith","A21");
+        Course course2 = new Course("math","Meier","B52");
+        Course course3 = new Course("french","Müller","A33");
+        Course course4 = new Course("physics","Schmidt","B14");
+
+        aStudent.addCourse(course2);
+        aStudent.addCourse(course3);
+        aStudent.addCourse(course4);
+
+        aStudent = school.findById("c001");
+        aStudent.addCourse(course1);
+        aStudent.addCourse(course4);
+
+        aStudent = school.findById("a001");
+        aStudent.addCourse(course2);
+        aStudent.addCourse(course3);
+
+        System.out.println(school.retrieveAllCoursesForStudent("c001"));
+
+
     }
 }
